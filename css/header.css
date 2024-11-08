@@ -1,0 +1,104 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  width: 100%;
+  .logo {
+    margin-top: 6px;
+  }
+}
+
+.burger-menu {
+  display: none;
+  width: 24px;
+  height: 16px;
+  background-image: url('/img/Burger\ menu\ icon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.berger-menu_x {
+  width: 24px;
+  height: 24px;
+  right: 20px;
+  position: absolute;
+  top: 20px;
+  background-image: url(https://www.freeiconspng.com/thumbs/close-icon/close-icon-9.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: white;
+  display: none;
+}
+
+.header-nav__ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  li:last-child {
+    border-radius: 6px;
+    border: 1px #191A23 solid;
+    padding: 20px 35px;
+  }
+  li a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  header {
+    margin-top: 0;
+    .logo {
+      margin: 0;
+    }
+  }
+
+  .logo-img {
+    width: 116px;
+    height: 24px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .berger-menu_x {
+    /* display: block; */
+  }
+
+  .header-nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: #191A23;
+    padding: 40px;
+    z-index: 1000;
+    display: none;
+  }
+
+  .header-nav__ul {
+    flex-direction: column;
+    li a {
+      color: white;
+    }
+  }
+
+  .header-nav__ul {
+    li:last-child {
+      border-radius: unset;
+      border: unset;
+      padding: unset;
+    }
+  }
+
+
+
+}
+

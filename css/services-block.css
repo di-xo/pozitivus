@@ -1,0 +1,161 @@
+.services-block__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  p {
+    width: 580px;
+    margin-left: 40px;
+  }
+}
+
+.services-block__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.services-card {
+  width: 48%;
+  border: 1px #191A23 solid;
+  border-radius: 32px;
+  box-shadow: 0px 5px 0px #191A23;
+  padding: 50px;
+  background-repeat: no-repeat !important;
+  background-size: auto !important;
+  background-position: 340px center !important;
+  p {
+    font-size: 30px;
+    border-radius: 6px;
+    width: 212px;
+    padding: 4px;
+    margin-bottom: 93px;
+    font-weight: 500;
+  }
+}
+
+.services-card:nth-child(3n+2) {
+  background-color: #B9FF66;
+  p {
+    background-color: #f3f3f3;
+  }
+}
+
+.services-card:nth-child(3n+3) {
+  background-color: #191A23;
+  p {
+    background-color: #f3f3f3;
+  }
+  a {
+    color: white;
+  }
+}
+
+.services-card:nth-child(3n+1) {
+  background: #f3f3f3;
+  p {
+    background-color: #B9FF66;
+  }
+}
+
+.services-card:first-child {
+  background-image: url('/img/tokyo-magnifier-web-search-with-elements\ 2.png');
+}
+
+.services-card:nth-child(2) {
+  background-image: url('/img/tokyo-selecting-a-value-in-the-browser-window\ 1.png');
+}
+
+.services-card:nth-child(3) {
+  background-image: url('/img/tokyo-browser-window-with-emoticon-likes-and-stars-around\ 2.png');
+}
+
+.services-card:nth-child(4) {
+  background-image: url('/img/tokyo-sending-messages-from-one-place-to-another\ 1.png');
+}
+
+.services-card:nth-child(5) {
+  background-image: url('/img/tokyo-many-browser-windows-with-different-information\ 1.png');
+}
+
+.services-card:last-child {
+  background-image: url('/img/tokyo-volumetric-analytics-of-different-types-in-web-browsers\ 2.png');
+}
+
+.services-card a {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.services-card a span {
+  display: inline-flex;
+  width: 41px;
+  height: 41px;
+  background-image: url('/img/Arrow\ 1.svg');
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.services-card:nth-child(3n+3) a span {
+  background-image: url('/img/Arrow\ 2.svg');
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
+
+  .services-block__info {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-content: center;
+    p {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+
+  .services-card {
+    width: 100%;
+    padding: 30px;
+    background-size: 114px 100px !important;
+    background-position: 80% 70% !important;
+  }
+  
+  .services-card p {
+    width: 175px;
+    font-size: 24px;
+  }
+
+  .services-card a {
+    font-size: 0;
+  }
+
+
+
+
+
+}

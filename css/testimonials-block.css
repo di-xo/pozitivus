@@ -1,0 +1,172 @@
+.testimonials-block {
+  margin-bottom: 100px;
+}
+
+.testimonials-block__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  p {
+    width: 580px;
+    margin-left: 40px;
+  }
+}
+
+.slider {
+  background-color: #191A23;
+  border-radius: 32px;
+  padding: 84px 0px 68px 0px;
+  overflow: hidden;
+}
+
+.slider-cards {
+  display: flex;
+  gap: 50px;
+  transform: translateX(-25%);
+}
+
+.slider-cards__card {
+  flex-shrink: 0;
+  width: 606px;
+  div {
+    position: relative;
+    border: 1px #B9FF66 solid;
+    padding: 48px;
+    border-radius: 32px;
+    p {
+      color: white;
+    }
+  }
+  h4 {
+    color: #B9FF66;
+    margin-left: 80px;
+    margin-top: 48px;
+    span {
+      margin-top: 4px;
+      color: white;
+      font-weight: 400;
+      display: block;
+    }
+  }
+}
+
+.slider-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 564px;
+  margin: 0px auto;
+  margin-top: 124px;
+  &>button {
+    width: 40px;
+    height: 20px;
+    background-color: #191A23;
+    border-style: none;
+    background-image: url('/img/Arrow\ right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    &:first-of-type {
+      transform: rotate(180deg);
+      opacity: .5;
+    }
+  }
+}
+
+.vector {
+  display: flex;
+  gap: 19px;
+  button {
+  width: 14px;
+  height: 14px;
+  border-style: none;
+  background-color: #191A23;
+  background-image: url('/img/Vector\ nav\ white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+    &:first-of-type {
+      background-image: url('/img/Vector\ nav\ green.png');
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
+
+  .testimonials-block {
+    margin-bottom: 60px;
+  }
+
+  .testimonials-block__info {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-content: center;
+    h2 {
+      text-align: center;
+    }
+    p {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+
+  .slider {
+    position: relative;
+    background-color: unset;
+    border-radius: unset;
+    padding: unset;
+  }
+
+  .slider-cards {
+    transform: unset;
+    gap: 20px;
+  }
+
+  .slider-cards__card {
+    border-radius: 32px;
+    padding: 20px;
+    flex-shrink: 0;
+    width: 100%;
+    background-color: #191A23;
+  }
+
+  .slider-cards__card {
+    & div {
+      p {
+        line-height: 1.5;
+      }
+    }
+    h4 {
+      margin-left: 40px;
+      margin-top: 20px;
+      margin-bottom: 100px;
+    }
+  }
+
+  .slider-navigation {
+    padding: 0 20px;
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    margin-top: 0;
+  }
+
+}

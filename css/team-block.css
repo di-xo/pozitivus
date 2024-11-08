@@ -1,0 +1,141 @@
+.team-block {
+  margin-bottom: 100px;
+}
+
+.team-block__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  p {
+    width: 580px;
+    margin-left: 40px;
+  }
+}
+
+.team-block__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  .team-card {
+    width: 31%;
+    min-height: 359px;
+    border: 1px #191A23 solid;
+    border-radius: 32px;
+    box-shadow: 0px 5px 0px #191A23;
+    padding: 50px 31px;
+    hr {
+      width: 100%;
+      height: 1px;
+      background-color: black;
+      margin: 28px 0px;
+    }
+  }
+}
+
+.team-card__person {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  h4 {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  div:last-child {
+    position: absolute;
+    right: 0;
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    background-color: black;
+    border-radius: 50%;
+    background-image: url('/img/linkedin.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+  div:first-of-type {
+    align-self: flex-end;
+  }
+}
+
+.team-block__button {
+  display: flex;
+  justify-content: flex-end;
+  button {
+    padding: 20px 35px;
+    margin-top: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
+
+  .team-block {
+    margin-bottom: 60px;
+  }
+
+  .team-block__info {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-content: center;
+    h2 {
+      text-align: center;
+    }
+    p {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+
+  .team-block__cards {
+    .team-card {
+      padding: 20px;
+      width: 100%;
+      min-height: unset;
+      p {
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .team-card__person {
+    gap: 10px;
+  }
+
+  .team-block__button {
+    button {
+      width: 100%;
+    }
+  }
+
+  .team-card__person {
+    div:last-child {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+}

@@ -1,0 +1,130 @@
+.contact-us-block__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  p {
+    width: 323px;
+    margin-left: 40px;
+  }
+}
+
+.contact-us-block__form-container {
+  background-color: #f3f3f3;
+  border-radius: 32px;
+  padding: 80px 0px 80px 100px;
+  background-image: url('/img/illustration\ radio.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 159% center;
+}
+
+.form-choice {
+  margin-bottom: 40px;
+  label:first-child {
+    margin-right: 35px;
+  }
+}
+
+.form-active {
+  max-width: 556px;
+  input {
+    border-radius: 6px;
+    border: 1px black solid;
+    padding: 18px 30px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  textarea {
+    font-family: "Space Grotesk", sans-serif;
+    border-radius: 6px;
+    padding: 18px 30px;
+    font-size: 18px;
+    margin-top: 5px;
+    font-size: 18px;
+    width: 100%;
+    min-height: 190px; 
+    resize: none;
+  }
+}
+
+.form-choice label {
+  display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 40px;
+	line-height: 25px;
+	user-select: none;
+  &:first-of-type {
+    margin-right: 35px;
+  }
+}
+
+.form-choice input {
+  display: none;
+}
+
+.form-choice label:before {
+  content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	background: url('/img/Radiobutton\ \(1\).svg') 0 0 no-repeat;
+}
+
+.form-choice input:checked + label:before {
+	background: url('/img/Radiobutton.svg') 0 0 no-repeat;
+}
+
+.post__button {
+  max-width: 556px;
+  button {
+    padding: 20px;
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .contact-us-block__info {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-content: center;
+    h2 {
+      text-align: center;
+    }
+    p {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+
+.contact-us-block__form-container {
+  background-image: unset;
+  padding: 30px;
+}
+
+  .form-active {
+    max-width: 100%;
+  }
+
+  .post__button {
+    max-width: 100%;
+}
+
+  .form-choice {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}

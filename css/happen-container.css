@@ -1,0 +1,80 @@
+.happen-container {
+  margin-bottom: 140px;
+  position: relative;
+  img {
+    position: absolute;
+    top: -15%;
+    left: 60%;
+  }
+}
+
+.happen-block {
+  background-color: #f3f3f3;
+  border-radius: 32px;
+  padding: 50px;
+  
+}
+
+.happen-block__info {
+  width: 500px;
+  h3 {
+    margin-bottom: 26px;
+  }
+  p {
+    margin-bottom: 26px;
+  }
+  button {
+    padding: 20px 35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
+
+  .happen-container {
+    margin-bottom: 60px;
+    img {
+      display: none;
+    }
+}
+
+  .happen-block {
+    padding: 30px;
+  }
+
+  .happen-block__info {
+    width: 100%;
+    h3 {
+      font-size: 24px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    p {
+      width: 100%;
+      line-height: 1.5;
+    }
+    button {
+      font-size: 18px;
+      padding: 20px;
+    }
+  }
+
+
+}

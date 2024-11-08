@@ -1,0 +1,40 @@
+.partners {
+  margin-bottom: 140px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
+
+  .partners {
+    margin: 0 -20px;
+    margin-bottom: 60px;
+    ul {
+      padding: 0 20px;
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      justify-content: unset;
+      &::-webkit-scrollbar { 
+        display: none;  
+      }
+    }
+  }
+
+
+
+}
