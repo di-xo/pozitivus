@@ -27,6 +27,12 @@ footer {
   }
 }
 
+.footer-header__nav ul li:hover {
+  a {
+    color: #B9FF66;
+  }
+}
+
 .footer-header__social-icon {
   display: flex;
   align-items: center;
@@ -97,13 +103,17 @@ footer {
   align-items: center;
   gap: 20px;
   padding: 58px 40px;
+  form {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
   button {
     cursor: pointer;
     color: black;
     background-color: #B9FF66;
     padding: 20px 35px;
     border: none;
-    margin-left: 20px;
   }
   input {
     background-color: #292A32;
@@ -111,7 +121,12 @@ footer {
     border-radius: 6px;
     border: 1px white solid;
     font-size: 18px;
+    color: white;
   }
+}
+
+.footer-main__subscribe button:hover {
+  box-shadow: 1px 5px 5px black;
 }
 
 .footer-footer {
@@ -171,10 +186,8 @@ footer {
     padding: 30px;
     width: 100%;
     form {
-      display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
       width: 100%;
     }
     input {
@@ -182,7 +195,6 @@ footer {
     }
     button {
       width: 100%;
-      margin-left: unset;
     }
   }
 

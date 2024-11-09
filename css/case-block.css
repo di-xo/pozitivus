@@ -30,6 +30,10 @@
   }
 }
 
+.case-block__card a:hover {
+  text-decoration: underline;
+}
+
 .case-card a span {
   display:inline-block;
   width: 41px;

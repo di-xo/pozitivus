@@ -1,5 +1,6 @@
 header {
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
   margin-top: 60px;
@@ -37,14 +38,27 @@ header {
   display: flex;
   align-items: center;
   gap: 40px;
-  li:last-child {
-    border-radius: 6px;
-    border: 1px #191A23 solid;
-    padding: 20px 35px;
-  }
   li a {
     color: black;
     text-decoration: none;
+  }
+}
+
+.header-nav__ul--li-active {
+  border-radius: 6px;
+  border: 1px #191A23 solid;
+  padding: 20px 35px;
+}
+
+.header-nav__ul--li:hover {
+  text-decoration: underline;
+}
+
+.header-nav__ul--li-active:hover {
+  background-color: #191A23;
+  text-decoration: none;
+  a {
+    color: white;
   }
 }
 
@@ -90,12 +104,10 @@ header {
     }
   }
 
-  .header-nav__ul {
-    li:last-child {
-      border-radius: unset;
-      border: unset;
-      padding: unset;
-    }
+  .header-nav__ul--li-active {
+    border-radius: unset;
+    border: unset;
+    padding: unset;
   }
 
 

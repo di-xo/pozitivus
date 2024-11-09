@@ -89,6 +89,12 @@
   }
 }
 
+.post__button button:hover {
+  background-color: #b9ff66;
+  color: black;
+  box-shadow: 1px 5px 5px black;
+}
+
 @media (max-width: 1023px) {
 
   .contact-us-block__info {

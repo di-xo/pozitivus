@@ -54,7 +54,10 @@
   border-radius: 50%;
   border: 1px #191A23 solid;
   background-color: #f3f3f3;
+}
 
+.working-process-block__card button:hover {
+  box-shadow: 1px 5px 5px black;
 }
 
 .working-process-block__card:not(:first-child) button {
@@ -69,21 +72,6 @@
   background-position: center;
   bottom: calc(100% - 99px);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1023px) {
 
