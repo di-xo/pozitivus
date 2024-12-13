@@ -20,9 +20,11 @@
 }
 
 .slider-cards {
+  margin: 0 auto;
+  width: 606px;
   display: flex;
   gap: 50px;
-  transform: translateX(-25%);
+  transition: all 0.3s;
 }
 
 .slider-cards__card {
@@ -67,7 +69,10 @@
     background-size: auto;
     &:first-of-type {
       transform: rotate(180deg);
-      opacity: .5;
+    }
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
     }
   }
 }
@@ -75,7 +80,9 @@
 .vector {
   display: flex;
   gap: 19px;
-  button {
+}
+
+.vector button {
   width: 14px;
   height: 14px;
   border-style: none;
@@ -84,26 +91,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-    &:first-of-type {
-      background-image: url('/img/Vector\ nav\ green.png');
-    }
-  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.green-btn {
+  background-image: url('/img/Vector\ nav\ green.png')!important;
+}
 
 @media (max-width: 1023px) {
 
@@ -131,11 +123,12 @@
   .slider {
     position: relative;
     background-color: unset;
-    border-radius: unset;
     padding: unset;
   }
 
   .slider-cards {
+    margin: unset;
+    width: unset;
     transform: unset;
     gap: 20px;
   }

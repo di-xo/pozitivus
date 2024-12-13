@@ -16,13 +16,13 @@
     padding: 20px 35px;
     margin-top: 35px;
     margin-bottom: 35px;
+    &:hover {
+      background-color: #b9ff66;
+      color: black;
+      box-shadow: 1px 5px 5px black;
+      transition: all 0.20s ease;
+    }
   }
-}
-
-.book button:hover {
-  background-color: #b9ff66;
-  color: black;
-  box-shadow: 1px 5px 5px black;
 }
 
 @media (max-width: 1023px) {

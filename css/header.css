@@ -12,26 +12,6 @@ header {
 
 .burger-menu {
   display: none;
-  width: 24px;
-  height: 16px;
-  background-image: url('/img/Burger\ menu\ icon.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.berger-menu_x {
-  width: 24px;
-  height: 24px;
-  right: 20px;
-  position: absolute;
-  top: 20px;
-  background-image: url(https://www.freeiconspng.com/thumbs/close-icon/close-icon-9.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-color: white;
-  display: none;
 }
 
 .header-nav__ul {
@@ -64,6 +44,8 @@ header {
 
 @media (max-width: 1023px) {
 
+
+
   header {
     margin-top: 0;
     .logo {
@@ -78,10 +60,47 @@ header {
 
   .burger-menu {
     display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    &.active {
+      z-index: 10;
+      position: fixed;
+      top: auto;
+      right: 20px;
+      span {
+        background-color: white;
+        transform: scale(0);
+        &:first-child {
+          transform: rotate(-45deg);
+          top: calc(50% - 1.5px);
+        }
+        &:last-child {
+          transform: rotate(45deg);
+          bottom: calc(50% - 1.5px);
+        }
+      }
+    }
   }
-
-  .berger-menu_x {
-    /* display: block; */
+  
+  .burger-menu span {
+    position: absolute;
+    top: calc(50% - 1.5px); /*сокращение transform через calc*/
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 8px;
+    transition: all .2s;
+    &:first-child {
+      top: 0;
+    }
+    &:last-child {
+      top: auto;
+      bottom: 0;
+    }
   }
 
   .header-nav {
@@ -93,11 +112,16 @@ header {
     height: 100%;
     background-color: #191A23;
     padding: 40px;
-    z-index: 1000;
+    z-index: 5;
     display: none;
+    &.active {
+      display: block;
+    }
   }
 
   .header-nav__ul {
+    overflow: auto;
+    height: 100%;
     flex-direction: column;
     li a {
       color: white;
