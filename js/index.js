@@ -1,3 +1,5 @@
+//------------Burger Menu---------------//
+
 const burger = document.querySelector('.burger-menu');
 const menu = document.querySelector('.header-nav');
 
@@ -8,6 +10,35 @@ if (burger) {
     document.body.classList.toggle('bodyOverflowToggle');
   })
 }
+
+//------------/Burger Menu---------------//
+
+//------------Working Process Block---------------//
+
+const containerCards = document.querySelector('.working-process-block__cards');
+const CARD_CLASS = '.working-process-block__card';
+const CARD_ACTIVE = 'working-process-block__card--active';
+const cardsChildrenArray = Array.from(containerCards.children);
+
+function cardClickHandler (e) {
+  const elem = e.target;
+  if (elem.nodeName === 'BUTTON') {
+    const currentCard = elem.closest(CARD_CLASS);
+    const isActive = currentCard.classList.contains(CARD_ACTIVE);
+    cardsChildrenArray.forEach((elem) => {
+      elem.classList.remove(CARD_ACTIVE);
+    })
+    if (!isActive) {
+      currentCard.classList.add(CARD_ACTIVE);
+    }
+  }
+}
+
+containerCards.addEventListener('click', cardClickHandler)
+
+//------------/Working Process Block---------------//
+
+//------------Slider---------------//
 
 const sliderBtnLeft = document.querySelector('.slider-btn-left');
 const sliderBtnRight = document.querySelector('.slider-btn-right');
@@ -68,4 +99,6 @@ function test (e) {
   } 
 }
 
-vector.addEventListener('click', test)
+vector.addEventListener('click', test);
+
+//------------/Slider---------------//
