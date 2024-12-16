@@ -23,7 +23,7 @@
   margin: 0 auto;
   width: 606px;
   display: flex;
-  gap: 50px;
+  gap: 20px;
   transition: all 0.3s;
 }
 
@@ -130,7 +130,6 @@
     margin: unset;
     width: unset;
     transform: unset;
-    gap: 20px;
   }
 
   .slider-cards__card {

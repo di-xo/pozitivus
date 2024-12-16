@@ -56,7 +56,7 @@ function arrowClickHandler (e) {
       sliderBtnLeft.classList.remove('disabled');
     }
     sliderCounter++;
-    sliderCards.style.transform = `translateX(-${sliderCounter * 106}%)`;
+    sliderCards.style.transform = `translateX(calc(${sliderCounter * -100}% - ${20 * sliderCounter}px))`;
     if (sliderCounter === sliderCardsChildrenAmount) {
       sliderBtnRight.classList.add('disabled');
     }
@@ -65,7 +65,7 @@ function arrowClickHandler (e) {
       sliderBtnRight.classList.remove('disabled');
     }
     sliderCounter--;
-    sliderCards.style.transform = `translateX(-${sliderCounter * 106}%)`;
+    sliderCards.style.transform = `translateX(calc(${sliderCounter * -100}% - ${20 * sliderCounter}px))`;
     if (sliderCounter === 0) {
       sliderBtnLeft.classList.add('disabled');
     }
@@ -88,7 +88,7 @@ function test (e) {
       elem.classList.remove('green-btn')
     })
     clickedElem.classList.add('green-btn');
-    sliderCards.style.transform = `translateX(-${vectorIndexOf * 106}%)`;
+    sliderCards.style.transform = `translateX(calc(${sliderCounter * -100}% - ${20 * sliderCounter}px))`;
     sliderBtnRight.classList.remove('disabled');
     sliderBtnLeft.classList.remove('disabled');
     if (vectorIndexOf === 0) {
